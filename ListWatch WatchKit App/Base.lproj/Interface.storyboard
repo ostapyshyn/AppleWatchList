@@ -26,8 +26,15 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <button width="1" alignment="left" title="Tap Me" id="EnI-Cc-yC6">
+                            <connections>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="sBi-OJ-k2b"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="47" alignment="left" text="Label" id="fBM-dX-wMb"/>
                     </items>
                     <connections>
+                        <outlet property="myLabel" destination="fBM-dX-wMb" id="umE-QS-1c6"/>
                         <outlet property="myTable" destination="0vX-mj-wDD" id="sI0-OS-hnV"/>
                     </connections>
                 </controller>
