@@ -13,7 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var myTable: WKInterfaceTable!
-    @IBOutlet var myLabel: WKInterfaceLabel!
+    
     
     
     
@@ -47,16 +47,26 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func buttonTapped() {
-        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .allowEmoji) { results  in
-            guard let results = results else {
-                return
-            }
-            OperationQueue.main.addOperation {
-                self.dismissTextInputController()
-                self.myLabel.setText(results[0] as? String)
-                
-            }
-        }
+        self.pushController(withName: "first", context: nil)
+//        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .allowEmoji) { results  in
+//            guard let results = results else {
+//                return
+//            }
+//            OperationQueue.main.addOperation {
+//                self.dismissTextInputController()
+//                self.myLabel.setText(results[0] as? String)
+//
+//            }
+//        }
+    }
+    
+    @IBAction func swcondButtonTapped() {
+        self.pushController(withName: "second", context: nil)
+    }
+    
+    @IBAction func thirdButtonTapped() {
+        self.pushController(withName: "third", context: nil)
+            
     }
     
 

@@ -7,6 +7,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
+        <!--first-->
+        <scene sceneID="vjv-hh-Od7">
+            <objects>
+                <controller identifier="first" id="jju-3g-6R5">
+                    <items>
+                        <label alignment="left" text="First" id="hUN-Tf-NnJ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-61" y="-24"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -26,20 +37,50 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <button width="1" alignment="left" title="Tap Me" id="EnI-Cc-yC6">
+                        <button width="1" alignment="left" title="Screen 1" id="EnI-Cc-yC6">
                             <connections>
                                 <action selector="buttonTapped" destination="AgC-eL-Hgc" id="sBi-OJ-k2b"/>
                             </connections>
                         </button>
-                        <label width="136" height="47" alignment="left" text="Label" id="fBM-dX-wMb"/>
+                        <button width="1" alignment="left" title="Screen 2" id="tnu-My-hGt">
+                            <connections>
+                                <action selector="swcondButtonTapped" destination="AgC-eL-Hgc" id="70w-Cl-ckc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Screen 3" id="1Ga-rd-V3N">
+                            <connections>
+                                <action selector="thirdButtonTapped" destination="AgC-eL-Hgc" id="JO0-Jp-b8n"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="myLabel" destination="fBM-dX-wMb" id="umE-QS-1c6"/>
                         <outlet property="myTable" destination="0vX-mj-wDD" id="sI0-OS-hnV"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="-81" y="288"/>
+        </scene>
+        <!--third-->
+        <scene sceneID="eWj-D6-UAM">
+            <objects>
+                <controller identifier="third" id="DnI-YV-7HV">
+                    <items>
+                        <label alignment="left" text="Third" id="822-YB-DjP"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="183" y="293"/>
+        </scene>
+        <!--second-->
+        <scene sceneID="60x-xc-EbF">
+            <objects>
+                <controller identifier="second" id="GXU-ZT-T4f">
+                    <items>
+                        <label alignment="left" text="Second" id="hI6-ae-GiO"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="183" y="-12"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
