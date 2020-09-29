@@ -7,80 +7,26 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
-        <!--first-->
-        <scene sceneID="vjv-hh-Od7">
-            <objects>
-                <controller identifier="first" id="jju-3g-6R5">
-                    <items>
-                        <label alignment="left" text="First" id="hUN-Tf-NnJ"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="-61" y="-24"/>
-        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ListWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="0vX-mj-wDD">
-                            <items>
-                                <tableRow identifier="cell" selectable="NO" id="MEe-kc-50t" customClass="RowController" customModule="ListWatch_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="bUn-4F-Zxn">
-                                        <items>
-                                            <label width="122" height="29" alignment="left" text="Label" id="wTy-2v-zG4"/>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="myLabel" destination="wTy-2v-zG4" id="fjN-7h-BLk"/>
-                                    </connections>
-                                </tableRow>
-                            </items>
-                        </table>
-                        <button width="1" alignment="left" title="Screen 1" id="EnI-Cc-yC6">
+                        <table alignment="left" id="0vX-mj-wDD"/>
+                        <button width="1" alignment="left" title="Add item" id="EnI-Cc-yC6">
                             <connections>
-                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="sBi-OJ-k2b"/>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="41r-bu-zys"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Screen 2" id="tnu-My-hGt">
-                            <connections>
-                                <action selector="swcondButtonTapped" destination="AgC-eL-Hgc" id="70w-Cl-ckc"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Screen 3" id="1Ga-rd-V3N">
-                            <connections>
-                                <action selector="thirdButtonTapped" destination="AgC-eL-Hgc" id="JO0-Jp-b8n"/>
-                            </connections>
-                        </button>
+                        <label width="136" height="21" alignment="left" text="Label" id="ZVR-QY-NlV"/>
                     </items>
                     <connections>
+                        <outlet property="myLabel" destination="ZVR-QY-NlV" id="Vxw-AV-cdP"/>
                         <outlet property="myTable" destination="0vX-mj-wDD" id="sI0-OS-hnV"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-81" y="288"/>
-        </scene>
-        <!--third-->
-        <scene sceneID="eWj-D6-UAM">
-            <objects>
-                <controller identifier="third" id="DnI-YV-7HV">
-                    <items>
-                        <label alignment="left" text="Third" id="822-YB-DjP"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="183" y="293"/>
-        </scene>
-        <!--second-->
-        <scene sceneID="60x-xc-EbF">
-            <objects>
-                <controller identifier="second" id="GXU-ZT-T4f">
-                    <items>
-                        <label alignment="left" text="Second" id="hI6-ae-GiO"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="183" y="-12"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
