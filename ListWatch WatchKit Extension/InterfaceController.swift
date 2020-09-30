@@ -14,6 +14,8 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var myTable: WKInterfaceTable!
     @IBOutlet var myLabel: WKInterfaceLabel!
+    @IBOutlet weak var mainImage: WKInterfaceImage!
+    
     
     let userDefaults = UserDefaults()
     
@@ -58,6 +60,7 @@ class InterfaceController: WKInterfaceController {
             guard let results = results else {
                 return
             }
+            //
             OperationQueue.main.addOperation { [self] in
                 self.dismissTextInputController()
                 self.myLabel.setText(results[0] as? String)

@@ -10,7 +10,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ListWatch_WatchKit_App" customModuleProvider="target">
+                <controller contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ListWatch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="0vX-mj-wDD"/>
                         <button width="1" alignment="left" title="Add item" id="EnI-Cc-yC6">
@@ -19,8 +19,10 @@
                             </connections>
                         </button>
                         <label width="136" height="21" alignment="left" text="Label" id="ZVR-QY-NlV"/>
+                        <imageView alignment="left" image="AnneSage-225a229ee80745d6b286f903fe521b4d" id="edg-Cb-qHj"/>
                     </items>
                     <connections>
+                        <outlet property="mainImage" destination="edg-Cb-qHj" id="BRi-ab-Xbd"/>
                         <outlet property="myLabel" destination="ZVR-QY-NlV" id="Vxw-AV-cdP"/>
                         <outlet property="myTable" destination="0vX-mj-wDD" id="sI0-OS-hnV"/>
                     </connections>
@@ -60,4 +62,7 @@
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AnneSage-225a229ee80745d6b286f903fe521b4d" width="3000" height="2000"/>
+    </resources>
 </document>
